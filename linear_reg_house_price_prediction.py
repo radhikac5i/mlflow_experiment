@@ -50,8 +50,8 @@ def evaluation(y, predictions):
     r_squared = r2_score(y, predictions)
     return mae, mse, rmse, r_squared
 
-mlflow.set_tracking_uri(uri="http://34.209.212.31:5000")
-mlflow.set_experiment("House Prices Prediction")
+mlflow.set_tracking_uri(uri="http://127.0.0.1:5000")
+mlflow.set_experiment("House Prices Prediction1")
 with mlflow.start_run(run_name="run_1"):
     lin_reg = LinearRegression()
     lin_reg.fit(X_train, y_train)
