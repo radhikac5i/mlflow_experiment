@@ -12,9 +12,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         
-    #   - name: run code
-    #     run: | 
-    #       cd /home/ubuntu/mlflow_folder
-    #       source mlflowenv/bin/activate
-    #       c
-    #       python linear_reg_house_price_prediction.py
+      - name: run code
+        run: | 
+          cd /home/ubuntu/mlflow_folder
+          source mlflowenv/bin/activate
+          cd /home/ubuntu/runner3/actions-runner/_work/mlflow_experiment/mlflow_experiment
+          python linear_reg_house_price_prediction.py
