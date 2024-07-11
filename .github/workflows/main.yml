@@ -1,0 +1,20 @@
+name: Train Model on Mlflow server in EC2
+
+on:
+  push:
+    branches: [ main ]
+ 
+jobs:        
+  cicd_1:
+    runs-on: [self-hosted, linux, x64]
+    steps:
+      # No changes
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+    #   - name: run code
+    #     run: | 
+    #       cd /home/ubuntu/mlflow_folder
+    #       source mlflowenv/bin/activate
+    #       c
+    #       python linear_reg_house_price_prediction.py
